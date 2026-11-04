@@ -28,3 +28,52 @@ This project designs a **Hybrid Ingredient-Aware Personalized Skincare Recommend
 ├── notebooks/              <- Jupyter notebooks for EDA and modeling (Upcoming Weeks 2-4)
 ├── src/                    <- Python production source code (modules, pipelines, utils)
 └── requirements.txt        <- Python dependencies and libraries
+
+
+🔬 3. Research Questions & Hypotheses (Week 1 Scope)
+
+    RQ1 (Chemical Vectorization): Does combining INCI chemical embeddings with user skin-type encodings improve ranking precision (NDCG@10) and biocompatibility over popularity baselines?
+
+    RQ2 (Aspect Sentiment): Does ABSA weighting on clinical tolerance versus non-clinical attributes reduce false-positive recommendations for sensitive cohorts?
+
+    RQ3 (Hybrid Ensemble): Does a Bayesian TPE-optimized hybrid model outperform standalone collaborative filtering under cold-start conditions?
+
+    RQ4 (Price vs. Efficacy): Do active ingredient concentrations predict consumer recommendations (is_recommended) more strongly than nominal price tiers?
+
+📊 4. Primary Datasets
+
+    Sephora Products and Skincare Reviews Dataset (Kaggle)
+
+        Over 8,000 beauty products (product_info.csv)
+
+        ~1,000,000 skincare customer reviews with self-reported skin type, skin tone, star rating, and text.
+
+    Sephora Cosmetics Chemical Components Dataset (Kaggle)
+
+        1,472 curated skincare products with chemical INCI ingredient lists and binary skin-type ground truth.
+
+🛠️ 5. Technology Stack
+
+    Language: Python 3.11+
+
+    Data Engineering: Pandas, NumPy, PyArrow, Regex
+
+    Machine Learning: Scikit-Learn, LightFM, Surprise, Optuna (TPE)
+
+    Natural Language Processing (NLP): SpaCy, NLTK, VADER, XGBoost, HuggingFace Transformers
+
+    Visualization: Matplotlib, Seaborn, Plotly, UMAP
+
+    Deployment & Prototype: Streamlit, FastAPI
+
+🚀 6. Next Steps (Week 2 Onwards)
+
+    [x] Week 1: Data Science Orientation, Problem Definition & Formal DOCX Report
+
+    [ ] Week 2: Data Ingestion, INCI Standardization & Exploratory Data Analysis (EDA)
+
+    [ ] Week 3: Aspect-Based Sentiment Classification (ABSA) Pipeline
+
+    [ ] Week 4: Hybrid Recommendation Modeling & Offline Evaluation (NDCG, Recall, Diversity)
+
+    [ ] Week 5: Interactive Streamlit Decision Support Prototype & Final Report
